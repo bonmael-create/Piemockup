@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pie — Online Psychotherapie & Coaching · Anna Piechatschek</title>
+<meta name="description" content="Online Psychotherapie, Coaching und Achtsamkeitsarbeit mit Anna Piechatschek, Heilpraktikerin für Psychotherapie. Kostenloses Kennenlerngespräch.">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sage:#a3ac9b;
+    --sage-dark:#5c6656;
+    --ink:#1c1c1a;
+    --ink-soft:#45473f;
+    --cream:#f4f6f1;
+    --line:#eaeae4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Karla',sans-serif;background:#ffffff;color:var(--ink);-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Quicksand',sans-serif;margin:0}
+  a{color:var(--ink);text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--sage);color:#fff;font-family:'Quicksand',sans-serif;font-weight:700;border-radius:999px;padding:16px 28px;font-size:16px;border:none;min-height:44px;cursor:pointer}
+  .btn:hover{background:var(--sage-dark)}
+  .btn-outline{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:var(--ink);font-family:'Quicksand',sans-serif;font-weight:700;border-radius:999px;padding:14px 26px;font-size:15px;border:1.5px solid var(--ink);min-height:44px}
+  .pill{display:inline-block;background:#eef0ea;color:var(--sage-dark);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:6px 14px}
+  header{position:sticky;top:0;z-index:20;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--line)}
+  header img{height:40px;width:auto}
+  header .btn{padding:10px 18px;font-size:13px}
+  .hero{padding:48px 0 40px;background:linear-gradient(180deg,var(--cream) 0%,#fff 100%)}
+  .hero-inner{display:flex;flex-direction:column;gap:16px}
+  .hero h1{font-size:32px;line-height:1.2}
+  .hero p{margin:0;font-size:16px;line-height:1.6;color:var(--ink-soft)}
+  .hero-ctas{display:flex;flex-direction:column;gap:10px;margin-top:6px;max-width:340px}
+  .trust{padding:28px 0;background:var(--cream)}
+  .trust-row{display:flex;gap:24px;overflow-x:auto}
+  .trust-item{flex:1;min-width:120px;text-align:center;display:flex;flex-direction:column;gap:6px}
+  .trust-item .t{font-family:'Quicksand',sans-serif;font-weight:700;font-size:13px}
+  .trust-item .d{font-size:12px;color:#5c5f57;line-height:1.4}
+  section.pad{padding:44px 0}
+  section.pad h2{font-size:22px;margin-bottom:22px}
+  .cards{display:grid;grid-template-columns:1fr;gap:16px}
+  .card{border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:8px}
+  .dot{width:36px;height:36px;border-radius:50%;background:var(--sage)}
+  .card .t{font-family:'Quicksand',sans-serif;font-weight:700;font-size:17px}
+  .card .d{font-size:14px;line-height:1.6;color:var(--ink-soft)}
+  .pain{background:#faf9f6}
+  .pain ul{margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.5;color:var(--ink-soft)}
+  .bio{display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center}
+  .bio img{width:160px;height:160px;object-fit:cover;border-radius:50%}
+  .bio .name{font-family:'Quicksand',sans-serif;font-weight:700;font-size:18px}
+  .bio .role{font-size:13px;color:var(--sage-dark);font-weight:600}
+  .bio p{margin:0;font-size:14px;line-height:1.7;color:var(--ink-soft);max-width:560px}
+  .kosten{background:var(--cream)}
+  .price-main{background:#fff;border-radius:16px;padding:20px;display:flex;justify-content:space-between;align-items:center}
+  .price-main .t{font-family:'Quicksand',sans-serif;font-weight:700;font-size:16px}
+  .price-main .s{font-size:12px;color:#5c5f57}
+  .price-main .p{font-family:'Quicksand',sans-serif;font-weight:700;font-size:20px;color:var(--sage-dark)}
+  .price-list{display:flex;flex-direction:column;gap:10px;margin:16px 0}
+  .price-row{background:#fff;border-radius:16px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;font-size:14px}
+  .price-row .p{font-family:'Quicksand',sans-serif;font-weight:700;font-size:15px}
+  .booking{padding:48px 0 64px;display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center}
+  .booking p{margin:0;font-size:14px;line-height:1.6;color:var(--ink-soft)}
+  footer{padding:32px 24px 100px;background:var(--ink);color:var(--cream);display:flex;flex-direction:column;gap:14px}
+  footer img{height:32px;width:auto;filter:invert(1) brightness(1.6)}
+  footer .contact{font-size:13px;line-height:1.8;color:#cfd2c8}
+  footer .links{font-size:12px;color:#8b8e83;display:flex;gap:16px}
+  footer .links a{color:#8b8e83}
+  .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:12px 20px calc(12px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(0,0,0,.06);z-index:30}
+  .sticky-cta .btn, .hero-ctas .btn, .hero-ctas .btn-outline, .booking .btn{width:100%}
+
+  @media (min-width: 860px){
+    .hero-inner{flex-direction:row;align-items:center;gap:48px}
+    .hero-text{flex:1}
+    .hero h1{font-size:44px}
+    .hero-ctas{flex-direction:row;max-width:none}
+    .hero-ctas .btn, .hero-ctas .btn-outline{width:auto}
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .price-list{flex-direction:row}
+    .price-row{flex:1;flex-direction:column;align-items:flex-start;gap:6px}
+    .sticky-cta{display:none}
+    .booking .btn{width:auto}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="assets/logo.png" alt="Pie — Psychologische Beratung">
+  <a href="#booking" class="btn">Termin buchen</a>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-text" style="display:flex;flex-direction:column;gap:16px">
+      <span class="pill">Online Psychotherapie & Coaching</span>
+      <h1>Mehr Leichtigkeit, Selbstwirksamkeit & seelische Balance</h1>
+      <p>Achtsame Begleitung mit Anna Piechatschek, Heilpraktikerin für Psychotherapie — bequem online, ganz gleich wo Du bist.</p>
+      <div class="hero-ctas">
+        <a href="#booking" class="btn">Kostenloses Kennenlerngespräch</a>
+        <a href="#kosten" class="btn-outline">Ablauf & Kosten ansehen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap trust-row">
+    <div class="trust-item"><div class="t">Privatsphäre</div><div class="d">Geschützter Raum, keine Praxis nötig</div></div>
+    <div class="trust-item"><div class="t">Ortsunabhängig</div><div class="d">Von zu Hause oder unterwegs</div></div>
+    <div class="trust-item"><div class="t">Schnell buchbar</div><div class="d">Termin oft in 1–2 Wochen</div></div>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap">
+    <h2>Was ich anbiete</h2>
+    <div class="cards">
+      <div class="card"><div class="dot"></div><div class="t">Psychotherapie via Videocall</div><div class="d">Individuelle psychotherapeutische Begleitung bei Stress, Ängsten und inneren Krisen — empathisch, sicher, ortsunabhängig.</div></div>
+      <div class="card"><div class="dot"></div><div class="t">Integration</div><div class="d">Wir übertragen Deine Werte und Ziele in den Alltag — für mehr Selbstverbindung und ein stimmiges Leben.</div></div>
+      <div class="card"><div class="dot"></div><div class="t">Empathisches Coaching</div><div class="d">In achtsamen Gesprächen auf Augenhöhe findest Du Orientierung, Klarheit & die nächsten Schritte.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad pain">
+  <div class="wrap">
+    <h2>Kennst Du das?</h2>
+    <ul>
+      <li>Das Gedankenkarussell dreht sich unaufhörlich</li>
+      <li>Der Schlaf ist nicht mehr erholsam</li>
+      <li>Sorgen und Ängste haben Dich im Griff</li>
+      <li>Du bist antriebslos und ziehst Dich zurück</li>
+      <li>Stress äußert sich in körperlichen Beschwerden</li>
+    </ul>
+    <p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:var(--ink-soft)">Der erste Schritt ist bereits geschafft: der Wunsch nach Veränderung hat Dich hierher gebracht.</p>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap bio">
+    <img src="assets/headshot.jpg" alt="Anna Piechatschek, Heilpraktikerin für Psychotherapie">
+    <div class="name">Anna Piechatschek</div>
+    <div class="role">Heilpraktikerin für Psychotherapie</div>
+    <p>„Meine Überzeugung liegt darin, dass jeder Mensch die Fähigkeit besitzt, die Fäden seines Lebens in die Hand zu nehmen.“ Ich begleite Dich mit Empathie, Klarheit und echtem Interesse an Deiner Geschichte.</p>
+  </div>
+</section>
+
+<section id="kosten" class="pad kosten">
+  <div class="wrap">
+    <h2>Ablauf & Kosten</h2>
+    <p style="margin:0 0 20px;font-size:14px;line-height:1.6;color:var(--ink-soft)">Kostenloser Erstkontakt, keine Überweisung oder Diagnose nötig. Frei, diskret, auf Deine Bedürfnisse abgestimmt.</p>
+    <div class="price-main">
+      <div><div class="t">Einzelsitzung</div><div class="s">60 Minuten</div></div>
+      <div class="p">89€</div>
+    </div>
+    <div class="price-list">
+      <div class="price-row"><span>4 Termine <span style="color:#8a8d84">(5% Rabatt)</span></span><span class="p">338,20€</span></div>
+      <div class="price-row"><span>6 Termine <span style="color:#8a8d84">(8% Rabatt)</span></span><span class="p">491,28€</span></div>
+      <div class="price-row"><span>12 Termine <span style="color:#8a8d84">(10% Rabatt)</span></span><span class="p">961,20€</span></div>
+    </div>
+    <a href="#booking" class="btn" style="width:100%;max-width:340px">Kostenloses Kennenlerngespräch</a>
+  </div>
+</section>
+
+<section id="booking" class="booking wrap">
+  <h2>Setze heute den ersten Schritt</h2>
+  <p>Dein Termin ist nur einen Klick entfernt — ganz ohne lange Wartezeiten.</p>
+  <a href="https://calendly.com/hello-pie-therapie" class="btn">Jetzt Sitzung buchen</a>
+</section>
+
+<footer>
+  <img src="assets/logo.png" alt="Pie Logo">
+  <div class="contact">hello@pie-therapie.de<br>+49 151 43399948</div>
+  <div class="links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="#booking" class="btn">Kennenlerngespräch buchen</a>
+</div>
+
+</body>
+</html>
